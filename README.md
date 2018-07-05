@@ -1,2 +1,2 @@
 # PaperRead
-## Here is my understanding of paper/architecture/mothods
+## Here is my understanding of some papers/architectures/mothods
