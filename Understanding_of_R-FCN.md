@@ -22,4 +22,8 @@ Paper: R-FCN: Object Detection viaRegion-based Fully Convolutional Networks (htt
 
 ![Fig 3. Detection example](image/R-FCN3.png)
 
-下图figure3和figure4是一个例子(correct and not correct)，一个input image(包含一个RoI),中间9层feature maps,分别对应上段中提到的９种颜色block(这里制定某一c的情况).由于RoIs我们早已得知，在算出所有feature map的各9个概率图之后，再看Fig 1. 中，黄色块作为top-left, 淡黄色作为top-center,最淡黄色作为top-right,绿色和蓝色块也以此类推。从而从k*k个c+1厚度的block ----->>> c+1厚度的k*k格子(k*k个value)。
+上图图figure3和figure4是一个例子(correct and not correct)，一个input image(包含一个RoI),中间9层feature maps,分别对应上段中提到的９种颜色block(这里制定某一c的情况).由于RoIs我们早已得知，在算出所有feature map的各9个概率图之后，再看Fig 1. 中，黄色块作为top-left, 淡黄色作为top-center,最淡黄色作为top-right,绿色和蓝色块也以此类推。从而从k*k个c+1厚度的block ----->>> c+1厚度的k*k格子(k*k个value)。
+
+最后讲一讲softmax,经过上面的处理，我们现在有c+1个类，每个类都有９个value.先将9个value pooling成１个value. 然后比较在range(c+1)中，哪一个class的value最大，从而得出object的class.
+
+
