@@ -1,3 +1,4 @@
+# Understanding of SSD 网络
 2018.07.06 现在谈一谈对ssd的理解，为什么ssd对size小物体敏感的低，性能不好。
 
 ### 话语摘录：　
