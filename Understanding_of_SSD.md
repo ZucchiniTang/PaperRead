@@ -24,7 +24,7 @@
       1. 先验框位置　and 对应边界框　的转换 <--->
       ![先验框位置　and 对应边界框　的转换](image/SSD3.png)
       2. SSD的Caffe源码实现中还有trick: 设置variance超参数(调整检测值)
-      3. SSD采用卷积做检测，所以就需要 (c+4)k 个卷积核完成这个特征图的检测过程
+      3. SSD采用卷积做检测，所以就需要 (c+4)k 个卷积核完成这个特征图的检测过程 '(?????不懂)'
       ![variance　and the number of 卷积核](image/SSD4.png)
       
 
