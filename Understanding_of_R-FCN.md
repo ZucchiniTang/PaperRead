@@ -3,6 +3,9 @@
 
 Paper: R-FCN: Object Detection viaRegion-based Fully Convolutional Networks (https://arxiv.org/pdf/1605.06409.pdf)
 
+## Contribution
+1. Instead of cropping featrues from the same layer where region proposals are predicted, crops are taken from the last layer of features prior to prediction.  ------From paper (http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_SpeedAccuracy_Trade-Offs_for_CVPR_2017_paper.pdf)  
+2. Position-sensitive score maps:
 
 ## 1.Overall architecture of R-FCN
 ![Fig 1. Overall architecture of R-FCN](image/R-FCN1.png)
