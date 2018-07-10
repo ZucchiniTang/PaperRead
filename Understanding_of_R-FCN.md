@@ -6,7 +6,7 @@ Paper: R-FCN: Object Detection viaRegion-based Fully Convolutional Networks (htt
 ## Contribution
 1. Instead of cropping featrues from the same layer where region proposals are predicted, crops are taken from the last layer of features prior to prediction.　在获得RoIs之后先不crop，对整个image的每个FM(feature maps)求k×k个FMs,然后根据之前得出的RoIs, crop得到的FMs，这样不用对每个RoIs都求一次k×k的FMs.从而减少计算量和时间，如下图所示，SSD, Faster R-CNN, R-Fcn的区别。  ------From paper (http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_SpeedAccuracy_Trade-Offs_for_CVPR_2017_paper.pdf)  
 ![SSD, Faster R-CNN, R-Fcn的区别](image/R-FCN4.png)
-2. Position-sensitive score maps: 
+2. Position-sensitive score maps: 下面有详说
 
 ## 1.Overall architecture of R-FCN
 ![Fig 1. Overall architecture of R-FCN](image/R-FCN1.png)
