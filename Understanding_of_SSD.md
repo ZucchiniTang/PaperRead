@@ -26,7 +26,7 @@
       2. SSD的Caffe源码实现中还有trick: 设置variance超参数(调整检测值) `how to`
       3. SSD采用卷积做检测，所以就需要 (c+4)k 个卷积核完成这个特征图的检测过程   
       ![variance　and the number of 卷积核](image/SSD4.png)
-      
+  5. The faster R-CNN style of region based methods tends to give higher accuracies but ends up being much slow than the single shot methods, because the single shot methods don't require this per region processing
 
 ### 特征向量
   1. 特征向量的生成: 在SSD中，每个Default Box将生成C+1+4(regression　offset)维特征向量。
@@ -35,3 +35,5 @@
   1. Conv8、Conv9、Conv10 and Conv11
 
 ### Architecture
+
+
