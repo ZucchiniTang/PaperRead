@@ -7,5 +7,8 @@ __Website__: www.cityscapes-dataset.net
   2. stereo video sequences recorded in streets from 50 different cities:
       1. 5000 high quality pixel-level annotations
       2. 20000 coarse annotations -  to enable methods that leverage large volumes of __weakly-labeled data__
-  3. their _accompanying(附带的)_ _empirical study(实证研究)_ provides an _in-depth analysis(深入分析)_ of the dataset characteristics
+  3. their _accompanying(附带的)_ _empirical study(实证研究)_ provides an _in-depth analysis(深入分析)_ of the dataset characteristics: performance evaluation of several state-of-the-art approaches based on Citysacpes Dataset.
+
+### Introduction
+  
   
