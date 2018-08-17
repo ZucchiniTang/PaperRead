@@ -7,8 +7,10 @@
    
    
 ### Inception v1 -----> GoogleNet
-   1. Naive version  ![](image/Inception_v1.png)
-   2. Inception module with dimension reductions  ![](image/Inception_v1_1.png)
+   1. Naive version  
+      <img src="image/Inception_v1.png" height="300" width="480">  
+   2. Inception module with dimension reductions   
+      <img src="image/Inception_v1_1.png" height="300" width="480">  
    3. GoogleNet, has 9 such inception modules stacked linearly, It is 22 layers deep (27, including the pooling layers). It uses **global average pooling** at the end of the last inception module.
    ![](image/Inception_v1_2.png)
       1. Auxiliary loss 
