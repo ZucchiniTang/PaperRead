@@ -26,3 +26,6 @@
    2. Moreover, they factorize convolutions of filter size n\*n to a combination of 1\*n and n\*1 convolutions
       1. Example: 3\*3 = 1\*3 combine with 3\*1   ----->  this method to be __33% more cheaper__ than the single 3x3 convolution
       <img src="image/Inception_v1_4.png" height="500" width="350">
+   3. filter bank: the module were expanded (made wider instead of deeper)
+   <img src="image/Inception_v1_5.png" height="350" width="400">
+   <img src="image/Inception_v1_6.png" height="350" width="350">
