@@ -7,6 +7,12 @@
    
    
 ### Inception v1 -----> GoogleNet
-![](image/Inception_v1.png)
-![](image/Inception_v1_1.png)
-![](image/Inception_v1_2.png)
+   1. Naive version  ![](image/Inception_v1.png)
+   2. Inception module with dimension reductions  ![](image/Inception_v1_1.png)
+   3. GoogleNet, has 9 such inception modules stacked linearly, It is 22 layers deep (27, including the pooling layers). It uses **global average pooling** at the end of the last inception module.
+   ![](image/Inception_v1_2.png)
+      1. Auxiliary loss 
+         1. To prevent the middle part from 'dying out', so the authors introduced two _auxiliary classifiers_　
+         2. Loss function  
+            total_loss = real_loss + 0.3 * aux_loss_1 + 0.3 * aux_loss_2
+         3. Auxiliary loss is purely used for training purposes, and is ignored during inference.
