@@ -8,9 +8,13 @@
    
 ### Inception v1 -----> GoogleNet
    1. Naive version  
-      <img src="image/Inception_v1.png" height="300" width="480">  
+      <p align="center">
+         <img src="image/Inception_v1.png" height="300" width="480"> 
+      </p>
    2. Inception module with dimension reductions   
-      <img src="image/Inception_v1_1.png" height="300" width="480">  
+      <p align="center">
+         <img src="image/Inception_v1_1.png" height="300" width="480">  
+      </p>
    3. GoogleNet, has 9 such inception modules stacked linearly, It is 22 layers deep (27, including the pooling layers). It uses **global average pooling** at the end of the last inception module.
    ![](image/Inception_v1_2.png)
       1. Auxiliary loss 
@@ -22,10 +26,16 @@
 ### Inception v2
    1. Factorize 5x5 convolution to two 3x3 convolution
       1. improve computational speed   --->   a 5x5 convolution is __2.78 times__ more expensive than a 3x3 convolution   --->  stacking two 3x3 convolutions infact leads to a boost in performance
-      <img src="image/Inception_v1_3.png" height="300" width="300">
+      <p align="center">
+         <img src="image/Inception_v1_3.png" height="300" width="300">
+      </p>
    2. Moreover, they factorize convolutions of filter size n\*n to a combination of 1\*n and n\*1 convolutions
       1. Example: 3\*3 = 1\*3 combine with 3\*1   ----->  this method to be __33% more cheaper__ than the single 3x3 convolution
-      <img src="image/Inception_v1_4.png" height="500" width="350">
+      <p align="center">
+         <img src="image/Inception_v1_4.png" height="500" width="350">
+      </p>  
    3. filter bank: the module were expanded (made wider instead of deeper)
-   <img src="image/Inception_v1_5.png" height="350" width="400">
-   <img src="image/Inception_v1_6.png" height="350" width="350">
+   <p align="center">
+      <img src="image/Inception_v1_5.png" height="350" width="400">
+      <img src="image/Inception_v1_6.png" height="350" width="350">
+   </p>
