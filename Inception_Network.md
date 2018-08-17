@@ -14,7 +14,15 @@
    3. GoogleNet, has 9 such inception modules stacked linearly, It is 22 layers deep (27, including the pooling layers). It uses **global average pooling** at the end of the last inception module.
    ![](image/Inception_v1_2.png)
       1. Auxiliary loss 
-         1. To prevent the middle part from 'dying out', so the authors introduced two _auxiliary classifiers_　
+         1. To prevent the middle part from 'dying out', so the authors introduced two __auxiliary classifiers__　
          2. Loss function  
             total_loss = real_loss + 0.3 * aux_loss_1 + 0.3 * aux_loss_2
          3. Auxiliary loss is purely used for training purposes, and is ignored during inference.
+         
+### Inception v2
+   1. Factorize 5x5 convolution to two 3x3 convolution
+      1. improve computational speed   --->   a 5x5 convolution is __2.78 times__ more expensive than a 3x3 convolution   --->  stacking two 3x3 convolutions infact leads to a boost in performance
+      <img src="image/Inception_v1_3.png" height="300" width="300">
+   2. Moreover, they factorize convolutions of filter size n\*n to a combination of 1\*n and n\*1 convolutions
+      1. Example: 3\*3 = 1\*3 combine with 3\*1   ----->  this method to be __33% more cheaper__ than the single 3x3 convolution
+      <img src="image/Inception_v1_4.png" height="500" width="350">
