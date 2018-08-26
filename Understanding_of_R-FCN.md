@@ -34,9 +34,10 @@ Paper: R-FCN: Object Detection viaRegion-based Fully Convolutional Networks (htt
 Reference: [1] https://medium.com/comet-app/review-of-deep-learning-algorithms-for-object-detection-c1f3d437b852  
 
 The challenging of the object detection is handle the regression and classification task at the same time. Also, the model outputs many more predicted boxes than actual objects, that's why we use the Intersection over Union(IoU) area to remove redundant boxes. IoU area corresponds to the overlapping area between predicted box and gound-truth box.
-    1. The Average Precision(AP): 
-        1. In binary classification
-    2. The Mean Average Precision(MAP):
-        1. In object detection challenges
-        2. MAP: the mean of average precision computed over all the classes. The MAP metric **avoids to have extreme specialization in few classes and thus weak performances in others**.
+
+1. The Average Precision(AP): 
+    1. In binary classification
+2. The Mean Average Precision(MAP):
+    1. In object detection challenges
+    2. MAP: the mean of average precision computed over all the classes. The MAP metric **avoids to have extreme specialization in few classes and thus weak performances in others**.
 
