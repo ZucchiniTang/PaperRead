@@ -11,10 +11,10 @@
       
    2. record the LR for every batch. Plot the loss and LR. select a point on the graph with the fastest decrease in the loss
       <p align="center">
-         <img src="image/learning_rate_2.png" height="300" width="480"> 
+         <img src="image/learning_rate_1.png" height="300" width="480"> 
       </p>
       
    3. Another way: calculating the rate of change of the loss (a derivative of the loss function with respect to iteration number)
       <p align="center">
-         <img src="image/learning_rate_3.png" height="300" width="480"> 
+         <img src="image/learning_rate_2.png" height="300" width="480"> 
       </p>
