@@ -15,4 +15,14 @@
          <img src="https://cdn-images-1.medium.com/max/1000/0*XEO3pwAee7tBT_D1.png" height="300" width="400"> 
           </p>
       4. Combining Precision and Recall
+          1. F1 score: the __harmonic mean__ (调和平均值)of precision and recall taking both metrics into account.   
+          [Quiz: Why use the harmonic mean instead of a simple average](https://stackoverflow.com/questions/26355942/why-is-the-f-measure-a-harmonic-mean-and-not-an-arithmetic-mean-of-the-precision)
+          ![The F1 score](https://cdn-images-1.medium.com/max/1000/1*UJxVqLnbSj42eRhasKeLOA.png)
+  2. __Visualizing__ Precision and Recall
+      1. Confusion Matrix
+      <p align="center">
+         <img src="https://cdn-images-1.medium.com/max/1000/1*CPnO_bcdbE8FXTejQiV2dg.png" height="300" width="580"> 
+          </p>
+      2. ROC (Receiver Operating Characteristic) curve
+          1. Shows how the recall and precision relationshop changes as we vary the threshold for identifying a positive sample. 我们如何定义positive sample对 precision 和 recall 的影响
  
