@@ -1,6 +1,9 @@
 ## reference: 
   1 .[Beyond Accuracy: Precision and Recall](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c)
 
+## Questions:
+  1. What's the threshold for?
+
 ### Understanding of [reference 1](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c)
   1. Choosing the right matrics for your tasks
       1. _Why is important? Here is a example:_ simply label every single person flying from a US airport as not a terrorist. Given the 800 million average passengers on US flights per year and the 19 (confirmed) terrorists who boarded US flights from 2000–2017, this model achieves an astounding accuracy of 99.9999999%! __But the US Department of the Homeland Security will not buy this model.__
