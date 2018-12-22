@@ -1,5 +1,6 @@
-## reference: 
-  1 .[Beyond Accuracy: Precision and Recall](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c)
+## Reference: 
+  1. [Beyond Accuracy: Precision and Recall](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c)
+  2. [Tag: average precision](https://sanchom.wordpress.com/tag/average-precision/)
 
 ## Questions:
   1. What's the threshold for?
@@ -38,12 +39,15 @@
           The Ramdom Classifer: Black diagonal line
       3. AUC (Area Under the Curvegeini)
           1. quantify a model’s ROC curve by calculating the AUC: a metric which falls between 0 and 1 with a __higher__ number indicating __better__ classification performance
-          2. A random classifier (the black line) achieves an AUC of 0.5.
+          2. A random classifier (the black line) achieves an AUC of 0.5.  
           
-## Average Precision
-### Understanding of [reference 2](https://sanchom.wordpress.com/tag/average-precision/)
+## Average Precision:
+   treet
 
 ## BDD dataset
+  tretre
 ## VOC dataset
+  retr
 ## Cityscape dataset
+  tergter
  
