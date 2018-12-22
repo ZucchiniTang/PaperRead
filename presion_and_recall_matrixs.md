@@ -40,4 +40,10 @@
           1. quantify a model’s ROC curve by calculating the AUC: a metric which falls between 0 and 1 with a __higher__ number indicating __better__ classification performance
           2. A random classifier (the black line) achieves an AUC of 0.5.
           
+## Average Precision
+### Understanding of [reference 2](https://sanchom.wordpress.com/tag/average-precision/)
+
+## BDD dataset
+## VOC dataset
+## Cityscape dataset
  
