@@ -38,11 +38,15 @@
         1. quantify a model’s ROC curve by calculating the AUC: a metric which falls between 0 and 1 with a __higher__ number indicating __better__ classification performance  
         2. A random classifier (the black line) achieves an AUC of 0.5.   
           
-## Understanding of [reference 2](https://sanchom.wordpress.com/tag/average-precision/)  
+## Understanding of [reference 2: Average precision](https://sanchom.wordpress.com/tag/average-precision/)  
   1. Evaluation of an information retrieval system (a search engine, for example) generally focuses on two things:  
     1. How relevant are the retrieved(检索) results? (precision) -----> 响应里面有多少是对的  
     2. Did the system retrieve many of the truly relevant documents? (recall）------> 正样本有多少被响应了  
-
+  2. 如何分辨一个好的clssifer是好是坏？
+    1. 使用precision-recall curves: A poor classifier will have to take a large hit in precision to get higher recall（提高precision时，recall下降的厉害，则classifer不好，反之亦然); 
+  3. Average Precision
+    1. Rather than comparing curves, its sometimes useful to have a single number that characterizes the performance of a classifier. (与其使用曲线，不如使用一个数值来表达classifer的好坏)
+    
 ## BDD dataset
   tretre
 ## VOC dataset
