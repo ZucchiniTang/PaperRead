@@ -48,7 +48,10 @@
     1. Rather than comparing curves, its sometimes useful to have a single number that characterizes the performance of a classifier. (与其使用曲线，不如使用一个数值来表达classifer的好坏)
       1. AP(Average Precision):strictily,the average precision is precision averaged across all values of recall between 0 and 1:(AP严格意义上来说是在recall:[0,1]范围下,precision的平均值)  
       2. IAP(Interpolated Average Precision):插值平均精度，比如the PASCAL Visual Objects Challenge使用IAP(虽然它们称为AP)
-      
+        1. [博客：Pascal VOC 数据集介绍](https://blog.csdn.net/weixin_35653315/article/details/71028523)中提到：
+        <p align="center">  
+         <img src=/image/presion_and_recall_matrixs_blog1.png>   
+          </p> 
 ## BDD dataset
   tretre
 ## VOC dataset
