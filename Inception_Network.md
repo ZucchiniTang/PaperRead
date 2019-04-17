@@ -1,4 +1,4 @@
-## This article is a summary of knowledgeabout Inception_Network
+## This article is a summary of knowledge about Inception_Network
 ### Reference: 
    1. Medium: A Simple Guide to the Versions of the Inception Network (https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202)
    2. Inception v1 (https://arxiv.org/pdf/1409.4842v1.pdf)
