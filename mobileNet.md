@@ -41,7 +41,7 @@
 ### MobileNet v2
 1. 概括: v2主要解决了V1在训练过程中非常容易**特征退化**的问题，V2相比V1效果有一定提升
 2. v1有两个问题
-  1. 问题1： ReLU造成的低维度数据坍塌(collapses)： 当映射维度 m={2, 3} 时，数据坍塌；当 m>15 时，数据基本被保存，如图。虽然这不是严格的数学证明，但是至少说明：**channel少的feature map不应后接ReLU，否则会破坏feature map**。  
+    1. 问题1： ReLU造成的低维度数据坍塌(collapses)： 当映射维度 m={2, 3} 时，数据坍塌；当 m>15 时，数据基本被保存，如图。虽然这不是严格的数学证明，但是至少说明：**channel少的feature map不应后接ReLU，否则会破坏feature map**。  
   <p align="center">
          <img src="image/mobilenet_v2.jpg" height="260" width="480"> 
       </p>  
