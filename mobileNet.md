@@ -26,9 +26,19 @@
          <img src="image/MobileNet_pointwise.jpg" height="260" width="480"> 
       </p>
 5. 维度、参数计算  
+  1. 下图为传统和MobileNet的结构对比。 MobileNet：input先经过Depthwise再经过1×1 conv(pointwise)，其output维度变化是 N×H×W×C-> N×H×W×C ->N×H×W×k，与传统一样。
 <p align="center">
-         <img src="image/MobileNet_v1.jpg" height="260" width="480"> 
+         <img src="image/mobilenet_v1.jpg" height="260" width="480"> 
       </p>
+  2. 乘法次数(不是需计算的参数数量）对比,N=1时: 
+    1. 传统： H×W×C×3×3×k
+    2. MobileNet: Depthwise+Pointwise = H×W×C×(3×3+k)  (Depthwise: H×W×C×3×3; Pointwise: H×W×C×1×1×k) 
+    3. MobileNet:传统 = (3×3+k): 3×3×k = (9+k)/9k
+
+### ShuffleNet v1
+1. Contribution: 
+    
+     
 
 
 
